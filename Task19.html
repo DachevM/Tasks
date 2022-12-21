@@ -5,24 +5,19 @@
     <title>Title</title>
 </head>
 <body>
-
 <script>
+  const nameMail = "ivanov.oleg@pochta.com"
   
-  const str = "ivanov.oleg@pochta.com"
-  
-  const emailFunc = (str => {
+  const EmailFunc = (str => {
       const array = str.split("@")
-      const corect = JSON.parse(JSON.stringify({
+      const correct = JSON.parse(JSON.stringify({
           username: array[0],
           domain: array[1],
-
       }));
-      
-      return corect
+      return correct
   })
   
-  console.log(emailFunc(str))
+  console.log(EmailFunc(nameMail))
 </script>
-
 </body>
 </html>
