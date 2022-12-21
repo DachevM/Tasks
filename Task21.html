@@ -5,18 +5,15 @@
     <title>Title</title>
 </head>
 <body>
-
 <script>
-  
-  const obj = { first_name: "Ivan", last_name: "Ivanov", email: "ivanov@pochta.com" }
+  const personObj = { first_name: "Ivan", last_name: "Ivanov", email: "ivanov@pochta.com" }
 
-  const userFunc = (obj => {
+  const PersonFunc = (obj => {
     const array = Object.values(obj)
     return array[1]+ " " + array[0] + " " + "E-mail" + ":" + " " +array[2]
   })
-
-  console.log(userFunc(obj))
+  
+  console.log(PersonFunc(personObj))
 </script>
-
 </body>
 </html>
