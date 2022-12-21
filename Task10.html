@@ -5,18 +5,17 @@
     <title>Title</title>
 </head>
 <body>
-
 <script>
-  const array = [{ from: 'Ivan', to: 'Oleg', amount: 2500},
+  const arrayPerson = [{ from: 'Ivan', to: 'Oleg', amount: 2500},
     { from: 'Ivan', to: 'Igor', amount: 2000},
     { from: 'Oleg', to: 'Igor', amount: 1500}]
   
-    const arrayMap = array.map(user=>{
-    return user.amount
+    const arrayMap = arrayPerson.map(person=>{
+    return person.amount
   })
   
   const diff = arrayMap.reduce((a,b)=> (a+b))/arrayMap.length;
-  const result = array.map(item => {
+  const result = arrayPerson.map(item => {
     const container = {};
     container.name = item.from
     container.to = item.to
@@ -26,8 +25,6 @@
   })
  
   console.log(diff,result);
-
 </script>
-
 </body>
 </html>
