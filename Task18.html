@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+  const str = "Иванов Пётр Андреевич"
+ 
+  const nameFunc = (str => {
+      const array = str.split(" ")
+      const obj = JSON.parse(JSON.stringify({
+          first_name: array[1],
+          last_name: array[0],
+          patronymic_name: array[2],
+      }));
+     
+      return obj
+  })
+  
+  console.log(nameFunc(str))
+</script>
+
+</body>
+</html>
