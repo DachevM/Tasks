@@ -5,23 +5,19 @@
     <title>Title</title>
 </head>
 <body>
-
 <script>
-  
-  const array = [{ name: 'Ivan', age: 24 },
+  const arrayPerson = [{ name: 'Ivan', age: 24 },
     { name: 'Oleg', age: 16},
     { name: 'Igor', age: 24}]
 
-  const arrayMap = array.map(user=>{
-    return user.age
+  const arrayMap = arrayPerson.map(person=>{
+    return person.age
   })
 
-  const obj = {}
-  obj.min = Math.min.apply(null,arrayMap);
-  obj.max = Math.max.apply(null,arrayMap);
-  console.log(obj);
-
+  const correctObj = {}
+  correctObj.min = Math.min.apply(null,arrayMap);
+  correctObj.max = Math.max.apply(null,arrayMap);
+  console.log(correctObj);
 </script>
-
 </body>
 </html>
