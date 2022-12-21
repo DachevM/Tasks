@@ -5,17 +5,13 @@
     <title>Title</title>
 </head>
 <body>
-
 <script>
-  
-  const ar = [{ name: `Ivan`, age: 24 },
+  const arrayPerson = [{ name: `Ivan`, age: 24 },
     { name: `Oleg`, age: 16},
     { name: `Igor`, age: 24}]
 
-  const sum = ar.map(item => item.age).reduce((prev, next)=> prev + next )
-  console.log(sum);
-
+  const sumPerson = arrayPerson.map(item => item.age).reduce((prev, next)=> prev + next )
+  console.log(sumPerson);
 </script>
-
 </body>
 </html>
