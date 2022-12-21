@@ -5,24 +5,20 @@
     <title>Title</title>
 </head>
 <body>
-
 <script>
-  const arr = Array(10);
+  const arrTwoDimen = Array(10);
 
   for (let i = 0; i < 10; i++) {
-    arr[i] = [...Array(10)].map((_, j) => i * j);
+    arrTwoDimen[i] = [...Array(10)].map((_, j) => i * j);
   }
+  console.log(arrTwoDimen)
 
-  console.log(arr)
-
-  let s = '';
+  let strTwoDimen = '';
 
   for (let i = 0; i < 10; i++) {
-    s += arr[i].join(' ') + '\n';
+    strTwoDimen += arrTwoDimen[i].join(' ') + '\n';
   }
-
-  console.log(s);
+  console.log(strTwoDimen);
 </script>
-
 </body>
 </html>
