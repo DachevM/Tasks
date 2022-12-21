@@ -5,19 +5,15 @@
     <title>Title</title>
 </head>
 <body>
-
 <script>
-  
-  const array = [13, 14, 32, 23, 34, 21, 44, 47, 86]
+  const arrayNum= [13, 14, 32, 23, 34, 21, 44, 47, 86]
 
-const Funcslice = ((array,num1,num2) => {
+const Funclice = ((array,num1,num2) => {
     const array1 = ar.slice(num1,num2+1)
     console.log(array1)
 }) 
 
-Funcslice(array,4,6)
-
+Funcslice(arrayNum, 4, 6)
 </script>
-
 </body>
 </html>
