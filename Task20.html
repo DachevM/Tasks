@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  
+  function fn(url) {
+    const obj = new URL(url);
+    const container = {}
+    container.protocol = obj.protocol
+    container.hostname = obj.hostname
+    container.child = obj.pathname
+    console.log(container);
+  }
+  
+  fn('https://www.google.com/doodles/rubiks-cube')
+</script>
+</body>
+</html>
