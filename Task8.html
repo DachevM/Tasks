@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+  
+  const ar = [{ name: `Ivan`, age: 24 },
+    { name: `Oleg`, age: 16},
+    { name: `Igor`, age: 24}]
+
+  const sum = ar.map(item => item.age).reduce((prev, next)=> prev + next )
+  console.log(sum);
+
+</script>
+
+</body>
+</html>
