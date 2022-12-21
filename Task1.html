@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+const ar = [{ name: 'Milk', price: 20, amount: 15 },
+            { name: 'Coffee', price: 30, amount: 17 },
+            { name: 'Tea', price: 10, amount: 14 }]
+
+  const usersByLikes = ar.map(item => {
+    const container = {};
+    container.name = item.name
+    container.total= item.amount * item.price
+    return container;
+})
+
+ console.log(usersByLikes);
+</script>
+</body>
+</html>
