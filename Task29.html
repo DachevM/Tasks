@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+  
+  const obj =  {
+
+id: 123,
+
+first_name: "Ivan",
+
+last_name: "Ivanov",
+
+password: "Mypwd!23",
+
+age: 13
+
+}
+const changed = { age: 15, password: "new password"}
+
+const Myfunc = ((obj, changed) =>{
+const obj1 = Object.assign(obj, changed)
+return obj1
+})
+
+Myfunc(obj, changed)
+
+</script>
+
+</body>
+</html>
