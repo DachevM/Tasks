@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+  
+  const str = "ivanov.oleg@pochta.com"
+  
+  const emailFunc = (str => {
+      const array = str.split("@")
+      const corect = JSON.parse(JSON.stringify({
+          username: array[0],
+          domain: array[1],
+
+      }));
+      
+      return corect
+  })
+  
+  console.log(emailFunc(str))
+</script>
+
+</body>
+</html>
