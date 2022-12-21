@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  const array = [{a: 5, b: 3, c: 4},
+    {a: 1, b: 3, c: 4},
+    {a: 4, b: 7, c: 4},
+    {a: 2, b: 2, c: 3}]
+
+  const triangle = array.map(item => {
+    const container = {};
+    container.p = item.a + item.b + item.c
+    return container;
+  })
+
+  console.log(triangle);
+</script>
+</body>
+</html>
