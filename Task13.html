@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+  const array = ['str', 123, '123', true, null, {}, 2]
+
+  const funcType = (array => {
+    for(let key of array){
+      (typeof(key)=="string") ? console.log('Это строка'):
+      (typeof(key)=="number") ? console.log("Это число"):
+      (typeof(key)=="boolean") ? console.log("Это булевое значение"):
+      console.log("Неизвестное значение");
+
+      }
+  })
+
+  funcType(array);
+</script>
+
+</body>
+</html>
