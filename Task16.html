@@ -5,15 +5,11 @@
     <title>Title</title>
 </head>
 <body>
-
 <script>
-  
   const phone = 88005553535;
-  const a = phone.toString().match(/(\d{1})(\d{3})(\d{3})(\d{2})(\d{2})/);
-  const correct = a[1] + '(' + a[2] + ')' + a[3] + '-' + a[4] + '-' + a[5];
-  console.log(correct);
-
+  const phoMat = phone.toString().match(/(\d{1})(\d{3})(\d{3})(\d{2})(\d{2})/);
+  const correctPhone = phoMat[1] + '(' + phoMat[2] + ')' + phoMat[3] + '-' + phoMat[4] + '-' + phoMat[5];
+  console.log(correctPhone);
 </script>
-
 </body>
 </html>
