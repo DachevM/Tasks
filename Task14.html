@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const calc = ((numFirst, numSecond, operator) => {
+
+        switch (operator) {
+            case '+':
+                return numFirst + numSecond;
+            case '-':
+                return numFirst - numSecond;
+            case '*':
+                return numFirst * numSecond;
+            case '/':
+                return numFirst / numSecond;
+            case '<':
+                return numFirst < numSecond;
+            case '>':
+                return numFirst > numSecond;
+        }
+    })
+
+    console.log(calc(1, 2, "+"));
+</script>
+</body>
+</html>
