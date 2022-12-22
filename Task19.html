@@ -6,18 +6,18 @@
 </head>
 <body>
 <script>
-  const nameMail = "ivanov.oleg@pochta.com"
+  const nameMail = "ivanov.oleg@pochta.com";
   
-  const EmailFunc = (str => {
-      const array = str.split("@")
+  const emailFunc = (str => {
+      const array = str.split("@");
       const correct = JSON.parse(JSON.stringify({
           username: array[0],
           domain: array[1],
       }));
-      return correct
+      return correct;
   })
   
-  console.log(EmailFunc(nameMail))
+  console.log(emailFunc(nameMail));
 </script>
 </body>
 </html>
