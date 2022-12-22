@@ -1,28 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Title</title>
-</head>
-<body>
+  </head>
+  <body>
+    <script>
+      const arr = Array(10);
+      let string = "";
 
-<script>
-  const arr = Array(10);
+      for (let i = 0; i < 10; i++) {
+        arr[i] = [...Array(10)].map((_, j) => ("" + i + j) ** 2);
+        string += arr[i].join(" ") + "\n";
+      }
 
-  for (let i = 0; i < 10; i++) {
-    arr[i] = [...Array(10)].map((_, j) => (""+i+j)**2);
-  }
-
-  console.log(arr)
-
-  let s = '';
-
-  for (let i = 0; i < 10; i++) {
-    s += arr[i].join(' ') + '\n';
-  }
-
-  console.log(s);
-</script>
-
-</body>
+      console.log(string);
+    </script>
+  </body>
 </html>
