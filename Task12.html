@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+  </head>
+  <body>
+    <script>
+      const arr = Array(10);
+      let string = "";
+
+      for (let i = 0; i < 10; i++) {
+        arr[i] = [...Array(10)].map((_, j) => ("" + i + j) ** 2);
+        string += arr[i].join(" ") + "\n";
+      }
+
+      console.log(string);
+    </script>
+  </body>
+</html>
