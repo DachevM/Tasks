@@ -9,7 +9,7 @@
   const arrayNum = [13, 14, 32, 23, 34, 21, 44, 47, 86];
 
 const funcSlice = ((array,num1,num2) => {
-    const array1 = ar.slice(num1,num2+1);
+    const array1 = array.slice(num1,num2+1);
     console.log(array1);
 }) 
 
