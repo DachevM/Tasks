@@ -8,13 +8,13 @@
 <script>
   const arrayPerson = [{ name: 'Ivan', age: 24 },
     { name: 'Oleg', age: 16},
-    { name: 'Igor', age: 24}]
+    { name: 'Igor', age: 24}];
 
   const arrayMap = arrayPerson.map(person=>{
-    return person.age
-  })
+    return person.age;
+  });
 
-  const correctObj = {}
+  const correctObj = {};
   correctObj.min = Math.min.apply(null,arrayMap);
   correctObj.max = Math.max.apply(null,arrayMap);
   console.log(correctObj);
