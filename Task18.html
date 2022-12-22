@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+  </head>
+  <body>
+    <script>
+      const name = "Иванов Пётр Андреевич";
+
+      const nameFunc = (str) => {
+        const array = str.split(" ");
+        const perconObj = {
+          first_name: array[1],
+          last_name: array[0],
+          patronymic_name: array[2],
+        };
+        return perconObj;
+      };
+
+      console.log(nameFunc(name));
+    </script>
+  </body>
+</html>
