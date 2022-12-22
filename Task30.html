@@ -1,0 +1,16 @@
+</head>
+<body>
+<script>
+  const personObj = {
+id: 123,
+first_name: "Ivan",
+last_name: "Ivanov",
+password: "Mypwd!23",
+age: 13
+};
+const clone = Object.assign({}, personObj);
+delete clone.password;
+console.log(clone);
+</script>
+</body>
+</html>
