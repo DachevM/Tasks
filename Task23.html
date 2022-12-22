@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  const arrRepeat = ["aaa", "bbb", "ccc", "aaa", "bbb","aaa"];
+  const  repeat = {};
+    
+   arrRepeat.forEach(i => {repeat[i] = (repeat[i]||0) + 1;});
+    
+   console.log(Object.entries(repeat).join(" "));
+</script>
+</body>
+</html>
