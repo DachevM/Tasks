@@ -8,17 +8,18 @@
 <script>
   const arrNumber = [4, 5, 2, 4, 1, 5, 3];
     
-  const arraySort = ((array,str) => {
-if(str == "ASC"){
-    return (array.sort((a,b)=> a-b));
-}else if(str == "DSC"){
-    return (array.sort((a,b)=> b-a));
-}else {
-    return (array.sort);
-}
-    }) 
+ const arraySort = (array, str) => {
+  if (str == "ASC") {
+    return array.sort((a, b) => a - b);
+  } else if (str == "DSC") {
+    return array.sort((a, b) => b - a);
+  } else {
+    return array.sort;
+  }
+};
 
-    arraySort(arrNumber,"DSC");
+arraySort(arrNumber, "DSC");
+
 </script>
 </body>
 </html>
