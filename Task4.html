@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-    const Fibonacci = (number => {
+    const fibonacci = (number => {
         if (number <= 0) return [];
         if (number == 1 ) return [0];
         const result = [0, 1];
@@ -18,10 +18,9 @@
         }
         
         return result;
-    })
+    });
     
-    console.log(Fibonacci(7));
+    console.log(fibonacci(7));
 </script>
-
 </body>
 </html>
