@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  const phone = 88005553535;
+  const phoMat = phone.toString().match(/(\d{1})(\d{3})(\d{3})(\d{2})(\d{2})/);
+  const correctPhone = phoMat[1] + '(' + phoMat[2] + ')' + phoMat[3] + '-' + phoMat[4] + '-' + phoMat[5];
+  console.log(correctPhone);
+</script>
+</body>
+</html>
