@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  const personObj = { first_name: "Ivan", last_name: "Ivanov", email: "ivanov@pochta.com" };
+
+  const personFunc = (obj => {
+    const array = Object.values(obj);
+    return array[1]+ " " + array[0] + " " + "E-mail" + ":" + " " +array[2];
+  });
+  
+  console.log(personFunc(personObj));
+</script>
+</body>
+</html>
