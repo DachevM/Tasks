@@ -1,24 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Title</title>
-</head>
-<body>
-<script>
-  const arrTwoDimen = Array(10);
-
-  for (let i = 0; i < 10; i++) {
-    arrTwoDimen[i] = [...Array(10)].map((_, j) => i * j);
-  }
-  console.log(arrTwoDimen);
-
-  let strTwoDimen = '';
-
-  for (let i = 0; i < 10; i++) {
-    strTwoDimen += arrTwoDimen[i].join(' ') + '\n';
-  }
-  console.log(strTwoDimen);
-</script>
-</body>
+  </head>
+  <body>
+    <script>
+      const arrTwoDimen = Array(10);
+      let strTwoDimen = "";
+      for (let i = 0; i < 10; i++) {
+        arrTwoDimen[i] = [...Array(10)].map((_, j) => i * j);
+        strTwoDimen += arrTwoDimen[i].join(" ") + "\n";
+      }
+      console.log(strTwoDimen);
+    </script>
+  </body>
 </html>
