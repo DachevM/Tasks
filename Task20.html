@@ -7,16 +7,16 @@
 <body>
 <script>
   
-  function fn(url) {
+  const urlFunc(url => {
     const obj = new URL(url);
-    const container = {}
-    container.protocol = obj.protocol
-    container.hostname = obj.hostname
-    container.child = obj.pathname
+    const container = {};
+    container.protocol = obj.protocol;
+    container.hostname = obj.hostname;
+    container.child = obj.pathname;
     console.log(container);
-  }
+  });
   
-  fn('https://www.google.com/doodles/rubiks-cube')
+  urlFunc('https://www.google.com/doodles/rubiks-cube');
 </script>
 </body>
 </html>
