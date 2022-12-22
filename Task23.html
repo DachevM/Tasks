@@ -6,10 +6,10 @@
 </head>
 <body>
 <script>
-  const arRepeat = ["aaa", "bbb", "ccc", "aaa", "bbb","aaa"]
+  const arrRepeat = ["aaa", "bbb", "ccc", "aaa", "bbb","aaa"];
   const  repeat = {};
     
-   arRepeat.forEach(i => {repeat[i] = (repeat[i]||0) + 1;});
+   arrRepeat.forEach(i => {repeat[i] = (repeat[i]||0) + 1;});
     
    console.log(Object.entries(repeat).join(" "));
 </script>
