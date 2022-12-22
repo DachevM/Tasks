@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+  </head>
+  <body>
+    <script>
+      const sumArray = [5, 10, 15, 20, 10, 25, 20, 30, 15];
+
+      const plusFunc = (arr, N) => {
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+          while (sum <= N) {
+            sum += arr[i];
+          }
+        }
+        console.log(sum);
+      };
+      plusFunc(sumArray, 55);
+    </script>
+  </body>
+</html>
