@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Title</title>
-</head>
-<body>
-<script>
-  const filter = ((arr, func1, func2) => {
-    let array = arr.filter(func1).map(func2);
-    for( let key of array){
-      console.log(key);
-    }
-    })
-  
-  filter( [1, 2, 3, 4],(el) => el %2 === 0, (el) => el * 2);
-</script>
-</body>
+  </head>
+  <body>
+    <script>
+      const filter = (arr, func1, func2) => {
+        let array = arr.filter(func1).map(func2);
+        for (let key of array) {
+          console.log(key);
+        }
+      };
+      const func1 = (el) => el % 2 === 0;
+      const func2 = (el) => el * 2;
+      filter([1, 2, 3, 4], func1, func2);
+    </script>
+  </body>
 </html>
