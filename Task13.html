@@ -6,9 +6,9 @@
 </head>
 <body>
 <script>
-  const arrType = ['str', 123, '123', true, null, {}, 2]
+  const arrType = ['str', 123, '123', true, null, {}, 2];
 
-  const FuncType = (array => {
+  const funcType = (array => {
     for(let key of array){
       (typeof(key)=="string") ? console.log('Это строка'):
       (typeof(key)=="number") ? console.log("Это число"):
@@ -18,7 +18,7 @@
       }
   })
 
-  FuncType(arrType);
+  funcType(arrType);
 </script>
 </body>
 </html>
