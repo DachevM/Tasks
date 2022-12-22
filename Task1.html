@@ -10,12 +10,9 @@ const arrPerson = [{ name: 'Milk', price: 20, amount: 15 },
             { name: 'Coffee', price: 30, amount: 17 },
             { name: 'Tea', price: 10, amount: 14 }];
 
-  const arrayMap = arrPerson.map(item => {
-    const container = {};
-    container.name = item.name
-    container.total= item.amount * item.price
-    return container;
-});
+  const arrayMap = arrPerson.map((item) => {
+    return { name: item.name, total: item.amount * item.price };
+  });
 
  console.log(arrayMap);
 </script>
