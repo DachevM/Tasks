@@ -6,13 +6,17 @@
 </head>
 <body>
 <script>
-  const personArr = [{ name: `Ivan`, age: 24 },
-    { name: `Oleg`, age: 16},
-    { name: `Igor`, age: 24}];
+ const personArr = [
+        { name: `Ivan`, age: 24 },
+        { name: `Oleg`, age: 16 },
+        { name: `Igor`, age: 24 },
+      ];
 
-    let maxAge = [];
-    for (let key in array) {
-      if (array[key].age > 18) maxAge.push(array[key].name);
+      let maxAge = [];
+      for (let key in array) {
+        if (array[key].age > 18) { 
+        maxAge.push(array[key].name);
+        }
       }
       console.log(maxAge.join());
 </script>
