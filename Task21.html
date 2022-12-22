@@ -6,14 +6,14 @@
 </head>
 <body>
 <script>
-  const personObj = { first_name: "Ivan", last_name: "Ivanov", email: "ivanov@pochta.com" }
+  const personObj = { first_name: "Ivan", last_name: "Ivanov", email: "ivanov@pochta.com" };
 
-  const PersonFunc = (obj => {
-    const array = Object.values(obj)
-    return array[1]+ " " + array[0] + " " + "E-mail" + ":" + " " +array[2]
-  })
+  const personFunc = (obj => {
+    const array = Object.values(obj);
+    return array[1]+ " " + array[0] + " " + "E-mail" + ":" + " " +array[2];
+  });
   
-  console.log(PersonFunc(personObj))
+  console.log(personFunc(personObj));
 </script>
 </body>
 </html>
