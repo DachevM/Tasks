@@ -6,20 +6,20 @@
 </head>
 <body>
 <script>
-  const name = "Иванов Пётр Андреевич"
+  const name = "Иванов Пётр Андреевич";
  
   const nameFunc = (str => {
-      const array = str.split(" ")
+      const array = str.split(" ");
       const nameObj = JSON.parse(JSON.stringify({
           first_name: array[1],
           last_name: array[0],
           patronymic_name: array[2],
       }));
      
-      return nameObj
+      return nameObjn
   })
   
-  console.log(NameFunc(name))
+  console.log(nameFunc(name))
 </script>
 </body>
 </html>
