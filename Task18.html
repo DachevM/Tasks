@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Title</title>
-</head>
-<body>
-<script>
-  const name = "Иванов Пётр Андреевич";
- 
-  const nameFunc = (str => {
-      const array = str.split(" ");
-      const nameObj = JSON.parse(JSON.stringify({
+  </head>
+  <body>
+    <script>
+      const name = "Иванов Пётр Андреевич";
+
+      const nameFunc = (str) => {
+        const array = str.split(" ");
+        const perconObj = {
           first_name: array[1],
           last_name: array[0],
           patronymic_name: array[2],
-      }));
-     
-      return nameObjn
-  })
-  
-  console.log(nameFunc(name))
-</script>
-</body>
+        };
+        return perconObj;
+      };
+
+      console.log(nameFunc(name));
+    </script>
+  </body>
 </html>
