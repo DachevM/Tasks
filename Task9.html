@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Title</title>
-</head>
-<body>
-<script>
-const arrayPerson = [
-  { name: "Ivan", age: 24 },
-  { name: "Oleg", age: 16 },
-  { name: "Igor", age: 24 },
-];
-
-const arrayMap = arrayPerson.map((person) => person.age);
-const correctObj = { min: Math.min(...arrayMap), max: Math.max(...arrayMap) };
-console.log(correctObj);
-</script>
-</body>
+  </head>
+  <body>
+    <script>
+      const arrayPerson = [
+        { name: "Ivan", age: 24 },
+        { name: "Oleg", age: 16 },
+        { name: "Igor", age: 24 },
+      ];
+      let newArr = [];
+      for (let key of arrayPerson) {
+        newArr.push(key.age);
+      }
+      let min = newArr[0];
+      let max = newArr[0];
+      newArr.forEach((elem, index) => {
+        if (min > elem) min = elem;
+      });
+      newArr.forEach((elem, index) => {
+        if (max < elem) max = elem;
+      });
+      let obj = { min: min, max: max };
+      console.log(obj);
+    </script>
+  </body>
 </html>
