@@ -11,16 +11,11 @@
         { name: "Oleg", age: 16 },
         { name: "Igor", age: 24 },
       ];
-      let newArr = [];
-      for (let key of arrayPerson) {
-        newArr.push(key.age);
-      }
+      let newArr = arrayPerson.map((item) => item.age);
       let min = newArr[0];
       let max = newArr[0];
-      newArr.forEach((elem, index) => {
+      newArr.forEach((elem) => {
         if (min > elem) min = elem;
-      });
-      newArr.forEach((elem, index) => {
         if (max < elem) max = elem;
       });
       let obj = { min: min, max: max };
