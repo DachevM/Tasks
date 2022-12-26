@@ -15,8 +15,12 @@
       let min = newArr[0];
       let max = newArr[0];
       newArr.forEach((elem) => {
-        if (min > elem) min = elem;
-        if (max < elem) max = elem;
+         if (min > elem) {
+          min = elem;
+        }
+        if (max < elem) {
+          max = elem;
+        }
       });
       const obj = { min: min, max: max };
       console.log(obj);
